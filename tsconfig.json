@@ -1,0 +1,30 @@
+{
+    //포함되어질 파일들을 지정
+    //src폴더안에 있는 여러 ts파일들을 지정해줌
+    "include": [
+        "src/**/*.ts"
+    ],
+    //노드패키지는 타입스크립트 컴파일 대상에서 제외시킴
+    "exclude": [
+        "node_modules"
+    ],
+    //타입스크립트 컴파일러에 대한 옵션 지정
+    "compilerOptions": {
+        //모듈에 대한 옵션
+        "module": "es6",
+        //모듈의 루트가되는 폴더
+        "rootDir": "src",
+        //컴파일된 파일들의 최상위 폴더
+        "outDir": "dist",
+        //자바스크립트 구문 지정
+        "target": "es6",
+        //원본타입스크립트를 나타낼지 지정
+        "sourceMap": true,
+        //컴파일시 주석제거하기 지정
+        "removeComments": true,
+        //암묵적으로 any 타입을 가지는 것을 허락하지 않음
+        "noImplicitAny": true,
+        //엄격한 널타입 체크 
+        "strictNullChecks": true,
+    }
+}
